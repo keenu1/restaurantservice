@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Restaurant Service</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Restaurant Service</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#materi" class="nav__link active-link">
+                            <i class='bx bx-book nav__icon'></i>
+                            <span class="nav__name">Materi</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#video" class="nav__link">
+                            <i class='bx bx-video nav__icon'></i>
+                            <span class="nav__name">Video</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#evaluasi" class="nav__link">
+                            <i class='bx bx-file nav__icon'></i>
+                            <span class="nav__name">Evaluasi</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <img src="assets/img/profile.png" alt="" class="nav__img" onclick="toggleMenu()">
+
+
+            <div class="sub__menu__wrap" id="subMenu">
+                <div class="sub__menu ">
+                    <div class="user__info">
+                        <img src="assets/img/profile.png" alt="">
+                        <h2>User</h2>
+                    </div>
+                    <hr>
+                    <a href="#" class="sub__menu__link">
+                        <i class='bx bx-user'></i>
+                        <p>Ganti avatar</p>
+
+                    </a>
+                    <a href="#" class="sub__menu__link">
+                        <i class='bx bx-lock-alt'></i>
+                        <p>Ganti password</p>
+
+                    </a>
+                    <a href="#" class="sub__menu__link">
+                        <i class='bx bx-log-out'></i>
+                        <p>Keluar</p>
+
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <!--=============== Materi ===============-->
+        <section class="container section section__height" id="materi">
+            <h2 class="section__title">Materi</h2>
+        </section>
+
+        <!--=============== Video  ===============-->
+        <section class="container section section__height" id="video">
+            <h2 class="section__title">Video</h2>
+        </section>
+
+        <!--=============== Evaluasi ===============-->
+        <section class="container section section__height" id="evaluasi">
+            <h2 class="section__title">Evaluasi</h2>
+        </section>
+
+    </main>
+
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
