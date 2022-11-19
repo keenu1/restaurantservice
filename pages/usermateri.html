@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <title>Restaurant Service</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="nav__logo">Restaurant Service</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="usermateri.html " class="nav__link active-link">
+                            <i class='bx bxs-book nav__icon'></i>
+                            <span class="nav__name">Kumpulan Materi</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="uservideo.html" class="nav__link ">
+                            <i class='bx bxs-video nav__icon'></i>
+                            <span class="nav__name">Kumpulan Video</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="userevaluasi.html" class="nav__link ">
+                            <i class='bx bxs-file nav__icon'></i>
+                            <span class="nav__name">Kumpulan Evaluasi</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__menuprofilesearch">
+                <img src="../assets/img/profile.png" alt="" class="nav__img" onclick="toggleMenu()">
+            </div>
+
+
+
+            <div class="sub__menu__wrap" id="subMenu">
+                <div class="sub__menu ">
+                    <div class="user__info">
+                        <img src="assets/img/profile.png" alt="">
+                        <h2>User</h2>
+                    </div>
+                    <hr>
+                    <a href="/pages/usergantiavatar.html" class="sub__menu__link">
+                        <i class='bx bx-user'></i>
+                        <p>Ganti avatar</p>
+
+                    </a>
+                    <a href="/pages/userreport.html" class="sub__menu__link">
+                        <i class='bx bx-bar-chart-alt-2'></i>
+                        <p>Report User</p>
+
+                    </a>
+                    <a href="/pages/usergantipassword.html" class="sub__menu__link">
+                        <i class='bx bx-lock-alt'></i>
+                        <p>Ganti password</p>
+
+                    </a>
+                    <a href="#" class="sub__menu__link">
+                        <i class='bx bx-log-out'></i>
+                        <p>Keluar</p>
+
+                    </a>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <!--=============== Materi ===============-->
+        <section class="container section section__height user__materi" id="materi">
+            <div class="materi">
+                <div class="materi__content">
+                    <h2 class="section__title">Kumpulan Materi</h2>
+                    <p class="section__subtitle">silahkan cari materi</p>
+                    <div class="search__formbox">
+                        <input type="text" id="Input" onkeyup="myFunction()" placeholder="Cari materi"
+                            class="search__form">
+                        <label for="" class="search__formicon"><i class='bx bx-search'></i></label>
+                    </div>
+                </div>
+                <div class="materi__content">
+                    <ul id="UL">
+                        <li>
+                            <div class="card__listimg">
+                                <a
+                                    href="https://qyqkdrgx1kgr26syi1s7ig.on.drv.tw/REVISI%20BISMILLAH%20FINAL%20BANGET/REVISI%20MEDIA%20PASCA%20SIDANG.html">
+                                    <img src="../assets/img/book-1.png" alt="" class="img__list">
+                                </a>
+                                <div class="card__description">
+                                    <h3>Memasak </h3>
+                                    <p>Memasak adalah Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                        Dicta,
+                                        ad esse
+                                        fuga recusandae, libero, error magnam minus excepturi asperiores voluptate
+                                        rem?
+                                        Dolorem
+                                        facere debitis sit nihil commodi nulla ipsam tempora?</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card__listimg">
+                                <a
+                                    href="https://qyqkdrgx1kgr26syi1s7ig.on.drv.tw/REVISI%20BISMILLAH%20FINAL%20BANGET/REVISI%20MEDIA%20PASCA%20SIDANG.html">
+                                    <img src="../assets/img/book-2.png" alt="" class="img__list">
+                                </a>
+                                <div class="card__description">
+                                    <h3>Melayani Pelanggan </h3>
+                                    <p>Melayani Pelanggan adalah Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Dicta,
+                                        ad esse
+                                        fuga recusandae, libero, error magnam minus excepturi asperiores voluptate
+                                        rem?
+                                        Dolorem
+                                        facere debitis sit nihil commodi nulla ipsam tempora?</p>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="card__listimg">
+                                <a
+                                    href="https://qyqkdrgx1kgr26syi1s7ig.on.drv.tw/REVISI%20BISMILLAH%20FINAL%20BANGET/REVISI%20MEDIA%20PASCA%20SIDANG.html">
+                                    <img src="../assets/img/book-2.png" alt="" class="img__list">
+                                </a>
+                                <div class="card__description">
+                                    <h3>Melayani Pelanggan </h3>
+                                    <p>Melayani Pelanggan adalah Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Dicta,
+                                        ad esse
+                                        fuga recusandae, libero, error magnam minus excepturi asperiores voluptate
+                                        rem?
+                                        Dolorem
+                                        facere debitis sit nihil commodi nulla ipsam tempora?</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card__listimg">
+                                <a
+                                    href="https://qyqkdrgx1kgr26syi1s7ig.on.drv.tw/REVISI%20BISMILLAH%20FINAL%20BANGET/REVISI%20MEDIA%20PASCA%20SIDANG.html">
+                                    <img src="../assets/img/book-2.png" alt="" class="img__list">
+                                </a>
+                                <div class="card__description">
+                                    <h3>Melayani Pelanggan </h3>
+                                    <p>Melayani Pelanggan adalah Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Dicta,
+                                        ad esse
+                                        fuga recusandae, libero, error magnam minus excepturi asperiores voluptate
+                                        rem?
+                                        Dolorem
+                                        facere debitis sit nihil commodi nulla ipsam tempora?</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card__listimg">
+                                <a
+                                    href="https://qyqkdrgx1kgr26syi1s7ig.on.drv.tw/REVISI%20BISMILLAH%20FINAL%20BANGET/REVISI%20MEDIA%20PASCA%20SIDANG.html">
+                                    <img src="../assets/img/book-2.png" alt="" class="img__list">
+                                </a>
+                                <div class="card__description">
+                                    <h3>Melayani Pelanggan </h3>
+                                    <p>Melayani Pelanggan adalah Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit.
+                                        Dicta,
+                                        ad esse
+                                        fuga recusandae, libero, error magnam minus excepturi asperiores voluptate
+                                        rem?
+                                        Dolorem
+                                        facere debitis sit nihil commodi nulla ipsam tempora?</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+
+
+    </main>
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+    el: '.swiper-scrollbar',
+    },
+
+    loop:true,
+    centeredSlides: true,
+    autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    },
+    breakpoints: {
+    0: {
+    slidesPerView: 2,
+    },
+    767: {
+    slidesPerView: 3,
+    },
+    1024: {
+    slidesPerView: 3,
+    },
+    },
+    });
+    
+    </script>
+<!--=============== MAIN JS ===============-->
+<script src="../assets/js/main.js"></script>
+
+</html>

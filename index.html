@@ -8,6 +8,7 @@
     <!--=============== BOXICONS ===============-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
@@ -45,7 +46,14 @@
                 </ul>
             </div>
 
-            <img src="assets/img/profile.png" alt="" class="nav__img" onclick="toggleMenu()">
+            <div class="nav__menuprofilesearch">
+                <div class="search__formnavbox">
+                    <input type="search" placeholder="cari" class="search__formnav">
+                    <label for="" class="search__formnavicon"><i class='bx bx-search'></i></label>
+                </div>
+                <img src="assets/img/profile.png" alt="" class="nav__img" onclick="toggleMenu()">
+            </div>
+
 
 
             <div class="sub__menu__wrap" id="subMenu">
@@ -55,12 +63,17 @@
                         <h2>User</h2>
                     </div>
                     <hr>
-                    <a href="#" class="sub__menu__link">
+                    <a href="./pages/usergantiavatar.html" class="sub__menu__link">
                         <i class='bx bx-user'></i>
                         <p>Ganti avatar</p>
 
                     </a>
-                    <a href="#" class="sub__menu__link">
+                    <a href="./pages/userreport.html" class="sub__menu__link">
+                        <i class='bx bx-bar-chart-alt-2'></i>
+                        <p>Report User</p>
+
+                    </a>
+                    <a href="./pages/usergantipassword.html" class="sub__menu__link">
                         <i class='bx bx-lock-alt'></i>
                         <p>Ganti password</p>
 
@@ -70,33 +83,363 @@
                         <p>Keluar</p>
 
                     </a>
+
                 </div>
             </div>
 
         </nav>
     </header>
-
     <main>
         <!--=============== Materi ===============-->
         <section class="container section section__height" id="materi">
-            <h2 class="section__title">Materi</h2>
+            <div class="materi">
+                <div class="materi__content">
+                    <h2 class="section__title">Materi</h2>
+                    <p class="section__subtitle">kumpulan materi media informasi tataboga</p>
+                    <a href="/pages/usermateri.html" class="insert__button button__materi">List Materi</a>
+
+                </div>
+                <div class="materi__content">
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a
+                                    href="https://qyqkdrgx1kgr26syi1s7ig.on.drv.tw/REVISI%20BISMILLAH%20FINAL%20BANGET/REVISI%20MEDIA%20PASCA%20SIDANG.html">
+                                    <img src="assets/img/book-1.png" alt=""></a>
+                                <!-- <img src="assets/img/book-1.png" alt=""> -->
+                            </div>
+                            <div class="swiper-slide">
+                                <a
+                                    href="https://qyqkdrgx1kgr26syi1s7ig.on.drv.tw/REVISI%20BISMILLAH%20FINAL%20BANGET/REVISI%20MEDIA%20PASCA%20SIDANG.html">
+                                    <img src="assets/img/book-2.png" alt=""></a></div>
+                            <div class="swiper-slide"><a
+                                    href="https://qyqkdrgx1kgr26syi1s7ig.on.drv.tw/REVISI%20BISMILLAH%20FINAL%20BANGET/REVISI%20MEDIA%20PASCA%20SIDANG.html">
+                                    <img src="assets/img/book-3.png" alt=""></a></div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
         </section>
 
         <!--=============== Video  ===============-->
-        <section class="container section section__height" id="video">
+        <section class="container section section__height video__content" id="video">
             <h2 class="section__title">Video</h2>
+            <p class="section__subtitle">kumpulan video materi informasi tataboga</p>
+            <div class="button__box">
+                <a href="/pages/uservideo.html" class="insert__button">List Video</a>
+
+            </div>
+            <div class="materi">
+                <div class="materi__content">
+                    <video src="/assets/video/Awesome Recipe In Just 1 Minute!.mp4" controls></video>
+                </div>
+                <div class="materi__content ">
+                    <!-- Slider main container -->
+                    <div class="swiper2">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="video__item"
+                                    onclick="document.getElementById('video-item-1').requestFullscreen(); document.getElementById('video-item-1').play();">
+                                    <video src="/assets/video/video -2.mp4" id="video-item-1"></video>
+                                    <div class="video-description">
+                                        <p>Memasak</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="video__item"
+                                    onclick="document.getElementById('video-item-2').requestFullscreen(); document.getElementById('video-item-2').play();">
+                                    <video src="/assets/video/Awesome Recipe In Just 1 Minute!.mp4"
+                                        id="video-item-2"></video>
+                                    <div class="video-description">
+                                        <p>Memasak</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!--=============== Evaluasi ===============-->
-        <section class="container section section__height" id="evaluasi">
+        <section class="container section section__height evaluasi__content" id="evaluasi">
             <h2 class="section__title">Evaluasi</h2>
+            <p class="section__subtitle"> kumpulan evaluasi media informasi tataboga</p>
+            <div class="button__box">
+                <a href="/pages/userevaluasi.html" class="insert__button">List Evaluasi</a>
+
+            </div>
+            <div class="materi">
+                <div class="materi__content ">
+                    <!-- Slider main container -->
+                    <div class="swiper3">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <a href="./pages/userpengerjaanevaluasi.html" class="card__task card__taskdanger">
+                                    <div class="card__title">
+                                        <h4>Evaluasi Memasak</h4>
+                                    </div>
+                                    <div class="card__desciption">
+                                        <p>20 pertanyaan </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./pages/userpengerjaanevaluasi.html" class="card__task card__taskdanger">
+                                    <div class="card__title">
+                                        <h4>Evaluasi Memasak</h4>
+                                    </div>
+                                    <div class="card__desciption">
+                                        <p>20 pertanyaan </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./pages/userpengerjaanevaluasi.html" class="card__task card__tasksuccess">
+                                    <div class="card__title">
+                                        <h4>Evaluasi Memasak</h4>
+                                    </div>
+                                    <div class="card__desciption">
+                                        <p>20 pertanyaan </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./pages/userpengerjaanevaluasi.html" class="card__task card__tasksuccess">
+                                    <div class="card__title">
+                                        <h4>Evaluasi Memasak</h4>
+                                    </div>
+                                    <div class="card__desciption">
+                                        <p>20 pertanyaan </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./pages/userpengerjaanevaluasi.html" class="card__task card__tasksuccess">
+                                    <div class="card__title">
+                                        <h4>Evaluasi Memasak</h4>
+                                    </div>
+                                    <div class="card__desciption">
+                                        <p>20 pertanyaan </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./pages/userpengerjaanevaluasi.html" class="card__task card__tasksuccess">
+                                    <div class="card__title">
+                                        <h4>Evaluasi Memasak</h4>
+                                    </div>
+                                    <div class="card__desciption">
+                                        <p>20 pertanyaan </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./pages/userpengerjaanevaluasi.html" class="card__task card__tasksuccess">
+                                    <div class="card__title">
+                                        <h4>Evaluasi Memasak</h4>
+                                    </div>
+                                    <div class="card__desciption">
+                                        <p>20 pertanyaan </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="./pages/userpengerjaanevaluasi.html" class="card__task card__tasksuccess">
+                                    <div class="card__title">
+                                        <h4>Evaluasi Memasak</h4>
+                                    </div>
+                                    <div class="card__desciption">
+                                        <p>20 pertanyaan </p>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
+
+
         </section>
+
 
     </main>
 
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+    el: '.swiper-scrollbar',
+    },
+
+    loop:true,
+    centeredSlides: true,
+    autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    },
+    breakpoints: {
+    0: {
+    slidesPerView: 2,
+    },
+    767: {
+    slidesPerView: 3,
+    },
+    1024: {
+    slidesPerView: 3,
+    },
+    },
+    });
+
+    const swiper2 = new Swiper('.swiper2', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: false,
+
+    // If we need pagination
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+    el: '.swiper-scrollbar',
+    },
+
+    loop:true,
+    centeredSlides: true,
+    // autoplay: {
+    // delay: 3000,
+    // disableOnInteraction: false,
+    // },
+    breakpoints: {
+    0: {
+    slidesPerView: 3,
+    
+    },
+    576:{
+    slidesPerView:3,
+    },
+    767: {
+    slidesPerView: 3,
+    },
+    1024: {
+    slidesPerView: 3,
+
+    },
+    },
+    });
+
+    const swiper3 = new Swiper('.swiper3', {
+    // Optional parameters
+    direction: 'vertical',
+    
+    // If we need pagination
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+    el: '.swiper-scrollbar',
+    },
+
+    loop:false,
+    centeredSlides: false,
+    // autoplay: {
+    // delay: 3000,
+    // disableOnInteraction: false,
+    // },
+    breakpoints: {
+    0: {
+    slidesPerView: 5,
+    },
+    576:{
+    slidesPerView:5,
+    },
+    767: {
+    slidesPerView: 5,
+    },
+    1024: {
+    slidesPerView: 5,
+
+    },
+    },
+    });
+    
+    </script>
+<!--=============== MAIN JS ===============-->
+<script src="assets/js/main.js"></script>
 
 </html>

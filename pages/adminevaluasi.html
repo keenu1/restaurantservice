@@ -84,8 +84,8 @@
     </header>
 
     <main>
-        <!--=============== Materi ===============-->
-        <section class="container section section__height" id="evaluasi">
+        <!--=============== EVALUASI ===============-->
+        <section class="container section section__height evaluasi" id="evaluasi">
             <h2 class="section__title">Tabel Evaluasi</h2>
             <p class="section__subtitle">Silahkan Edit Evaluasi</p>
             <div class="insert__button__width">
@@ -97,47 +97,50 @@
                     <option value="M002">M002</option>
                 </select>
             </div>
-            <div style="overflow-x: auto;">
-                <table class="content__table">
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Kode Materi</th>
-                            <th>Kode Evaluasi</th>
-                            <th>Nama Evaluasi</th>
-                            <th>Soal Evaluasi</th>
-                            <th>Opsi 1</th>
-                            <th>Opsi 2</th>
-                            <th>Opsi 3</th>
-                            <th>Opsi 4</th>
-                            <th>Kunci Jawaban</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>M001</td>
-                            <td>E001</td>
-                            <td>Evaluasi Memasak</td>
-                            <td>Apa itu memasak ?</td>
-                            <td>Memasak adalah a</td>
-                            <td>Memasak adalah b</td>
-                            <td>Memasak adalah c</td>
-                            <td>Memasak adalah d</td>
-                            <td>Memasak adalah c</td>
-                            <td style="min-width: 140px ;">
-                                <span class="table__edit" onclick="toggleMenuAdminEditShow()">
-                                    <i class='bx bx-edit-alt'></i>
-                                </span>
-                                <a href="" class="table__delete">
-                                    <i class='bx bx-trash-alt'></i>
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="table__container">
+                <div style="overflow-x: auto;" class="table__width__evaluasi">
+                    <table class="content__table">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Kode Materi</th>
+                                <th>Kode Evaluasi</th>
+                                <th>Nama Evaluasi</th>
+                                <th>Soal Evaluasi</th>
+                                <th>Opsi 1</th>
+                                <th>Opsi 2</th>
+                                <th>Opsi 3</th>
+                                <th>Opsi 4</th>
+                                <th>Kunci Jawaban</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>M001</td>
+                                <td>E001</td>
+                                <td>Evaluasi Memasak</td>
+                                <td>Apa itu memasak ?</td>
+                                <td>Memasak adalah a</td>
+                                <td>Memasak adalah b</td>
+                                <td>Memasak adalah c</td>
+                                <td>Memasak adalah d</td>
+                                <td>Memasak adalah c</td>
+                                <td style="min-width: 140px ;">
+                                    <span class="table__edit" onclick="toggleMenuAdminEditShow()">
+                                        <i class='bx bx-edit-alt'></i>
+                                    </span>
+                                    <a href="" class="table__delete">
+                                        <i class='bx bx-trash-alt'></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
+            <!-- ADMIN INSERT -->
             <div class="form__card">
                 <div class="admin__forms none" id="admin-insert">
                     <form action="adminmateri.html" class="admin__insert">
@@ -235,6 +238,8 @@
                     </form>
                 </div>
             </div>
+
+            <!-- ADMIN UPDATE -->
             <div class="form__card">
                 <div class="admin__forms none" id="admin-edit">
                     <form action="adminmateri.html" class="admin__insert">

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="../assets/css/styles.css">
+
+    <title>Restaurant Service</title>
+</head>
+
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="../index.html" class="nav__logo">Restaurant Service</a>
+
+            <div class="nav__menu" id="nav-menu" style="display: none;">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="usermateri.html" class="nav__link ">
+                            <i class='bx bxs-book nav__icon'></i>
+                            <span class="nav__name">Kumpulan Materi</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="uservideo.html" class="nav__link ">
+                            <i class='bx bxs-video nav__icon'></i>
+                            <span class="nav__name">Kumpulan Video</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="userevaluasi.html" class="nav__link ">
+                            <i class='bx bxs-file nav__icon'></i>
+                            <span class="nav__name">Kumpulan Evaluasi</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__menuprofilesearch">
+                <img src="../assets/img/profile.png" alt="" class="nav__img" onclick="toggleMenu()">
+            </div>
+
+
+
+            <div class="sub__menu__wrap" id="subMenu">
+                <div class="sub__menu ">
+                    <div class="user__info">
+                        <img src="assets/img/profile.png" alt="">
+                        <h2>User</h2>
+                    </div>
+                    <hr>
+                    <a href="/pages/usergantiavatar.html" class="sub__menu__link">
+                        <i class='bx bx-user'></i>
+                        <p>Ganti avatar</p>
+
+                    </a>
+                    <a href="/pages/userreport.html" class="sub__menu__link">
+                        <i class='bx bx-bar-chart-alt-2'></i>
+                        <p>Report User</p>
+
+                    </a>
+                    <a href="/pages/usergantipassword.html" class="sub__menu__link">
+                        <i class='bx bx-lock-alt'></i>
+                        <p>Ganti password</p>
+
+                    </a>
+                    <a href="#" class="sub__menu__link">
+                        <i class='bx bx-log-out'></i>
+                        <p>Keluar</p>
+
+                    </a>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <!--=============== Materi ===============-->
+        <section class="container section section__height user__evaluasi pengerjaan" id="pengerjaanevaluasi">
+            <div class="materi">
+                <div class="materi__content ">
+                    <h2 class="section__title"> Evaluasi Memasak</h2>
+                    <p class="section__subtitle">20 Pertanyaan</p>
+                </div>
+                <form action="">
+                    <div class="materi__content">
+                        <div class="form__task">
+
+                            <div class="form__questionbox">
+                                <p>1. Apa itu memasak ? </p>
+                                <div class="form__optionbox">
+                                    <label class="form__option" for="opsi1">
+                                        <input type="radio" id="opsi1" name="question1" value="Memasak adalah kegiatan untuk
+                                            menyiapkan" class="form__optioninput">
+                                        <span class="form__optionlabel">Lorem ipsum dolor sit amet consectetur
+                                            adipisicing elit. Id perspiciatis veritatis ut sint amet ratione esse,
+                                            exercitationem laboriosam vitae dolores repellendus corporis ex. Sapiente
+                                            repudiandae quibusdam tenetur et quasi error!
+                                            makanan</span><br>
+                                    </label>
+                                    <label class="form__option" for="opsi2">
+                                        <input type="radio" id="opsi2" name="question1" value="Memasak adalah kegiatan untuk
+                                            menyiapkan" class="form__optioninput">
+                                        <span class="form__optionlabel">Memasak adalah kegiatan untuk
+                                            menyiapkan
+                                            makanan</span><br>
+                                    </label>
+                                    <label class="form__option" for="opsi3">
+                                        <input type="radio" id="opsi3" name="question1" value="Memasak adalah kegiatan untuk
+                                            menyiapkan" class="form__optioninput">
+                                        <span class="form__optionlabel">Memasak adalah kegiatan untuk
+                                            menyiapkan
+                                            makanan</span><br>
+                                    </label>
+                                    <label class="form__option" for="opsi4">
+                                        <input type="radio" id="opsi4" name="question1" value="Memasak adalah kegiatan untuk
+                                            menyiapkan" class="form__optioninput">
+                                        <span class="form__optionlabel">Memasak adalah kegiatan untuk
+                                            menyiapkan
+                                            makanan</span><br>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form__questionbox">
+                                <p>2. Apa itu memasak ? </p>
+                                <div class="form__optionbox">
+                                    <label class="form__option" for="opsi5">
+                                        <input type="radio" id="opsi5" name="question2" value="Memasak adalah kegiatan untuk
+                                            menyiapkan" class="form__optioninput">
+                                        <span class="form__optionlabel">Memasak adalah kegiatan untuk
+                                            menyiapkan
+                                            makanan</span><br>
+                                    </label>
+                                    <label class="form__option" for="opsi6">
+                                        <input type="radio" id="opsi6" name="question2" value="Memasak adalah kegiatan untuk
+                                            menyiapkan" class="form__optioninput">
+                                        <span class="form__optionlabel">Memasak adalah kegiatan untuk
+                                            menyiapkan
+                                            makanan</span><br>
+                                    </label>
+                                    <label class="form__option" for="opsi7">
+                                        <input type="radio" id="opsi7" name="question2" value="Memasak adalah kegiatan untuk
+                                            menyiapkan" class="form__optioninput">
+                                        <span class="form__optionlabel">Memasak adalah kegiatan untuk
+                                            menyiapkan
+                                            makanan</span><br>
+                                    </label>
+                                    <label class="form__option" for="opsi8">
+                                        <input type="radio" id="opsi8" name="question2" value="Memasak adalah kegiatan untuk
+                                            menyiapkan" class="form__optioninput">
+                                        <span class="form__optionlabel">Memasak adalah kegiatan untuk
+                                            menyiapkan
+                                            makanan</span><br>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="materi__content">
+                        <p>Periksa kembali jawaban sebelum menyimpan jawaban</p>
+                        <button type="submit" form="" value="Submit" class="insert__button">Simpan Jawaban</button>
+                    </div>
+                </form>
+        </section>
+
+
+    </main>
+
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+    const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+    el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+    el: '.swiper-scrollbar',
+    },
+
+    loop:true,
+    centeredSlides: true,
+    autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+    },
+    breakpoints: {
+    0: {
+    slidesPerView: 2,
+    },
+    767: {
+    slidesPerView: 3,
+    },
+    1024: {
+    slidesPerView: 3,
+    },
+    },
+    });
+    
+    </script>
+<!--=============== MAIN JS ===============-->
+<script src="../assets/js/main.js"></script>
+
+</html>
