@@ -482,8 +482,6 @@ img {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-
-
 .content__table thead tr {
   background-color: var(--first-color);
   color: #ffffff;
@@ -499,6 +497,7 @@ img {
 .content__table tbody tr {
   border-bottom: 1px solid #dddddd;
   vertical-align: top;
+
 }
 
 .content__table tbody tr:nth-of-type(even) {
@@ -516,6 +515,23 @@ img {
 .content__table tbody tr:hover {
 
   color: var(--first-color);
+}
+
+.content__tableinside td {
+  padding-top: 0px;
+
+}
+
+.content__tableinside tr {
+  background-color: transparent;
+}
+
+.content__table .content__tableinside tr:nth-of-type(even) {
+  background-color: transparent;
+}
+
+.opsi {
+  padding-bottom: 10px;
 }
 
 .table__edit,
@@ -1426,9 +1442,12 @@ select.decorated option:hover {}
   }
 
   .evaluasi .insert__button__width {
-
-    width: 97%;
     margin: 0 auto;
+    width: 100%;
+  }
+
+  .evaluasi .content__table {
+    max-width: 90%;
   }
 
   .admin__forms {
@@ -1622,7 +1641,7 @@ select.decorated option:hover {}
 
   .evaluasi .insert__button__width {
 
-    width: 97%;
+    width: 90%;
     margin: 0 auto;
   }
 

@@ -92,6 +92,10 @@
                 <span class="insert__button" onclick="toggleMenuAdminShow()">
                     Tambah Data
                 </span>
+                <div class="search__formbox">
+                    <input type="text" id="Input" onkeyup="searchTable()" placeholder="Cari video" class="search__form">
+                    <label for="" class="search__formicon"><i class='bx bx-search'></i></label>
+                </div>
             </div>
             <div style="overflow-x: auto;">
                 <table class="content__table">
@@ -104,13 +108,13 @@
                             <th>Aksi</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="Table">
                         <tr>
                             <td>1</td>
                             <td>M001</td>
                             <td>Memasak</td>
                             <td><a href="" class="table__file">memasak.mp4</a></td>
-                            <td>
+                            <td style="min-width: 140px ;">
                                 <span class="table__edit" onclick="toggleMenuAdminEditShow()">
                                     <i class='bx bx-edit-alt'></i>
                                 </span>
@@ -120,11 +124,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td>1</td>
-                            <td>M001</td>
-                            <td>Memasak</td>
-                            <td><a href="" class="table__file">memasak.mp4</a></td>
-                            <td>
+                            <td>2</td>
+                            <td>M002</td>
+                            <td>Melayani Pelanggan</td>
+                            <td><a href="" class="table__file">melayani pelanggan.mp4</a></td>
+                            <td style="min-width: 140px ;">
                                 <span class="table__edit" onclick="toggleMenuAdminEditShow()">
                                     <i class='bx bx-edit-alt'></i>
                                 </span>

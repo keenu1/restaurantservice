@@ -92,10 +92,10 @@
                 <span class="insert__button" onclick="toggleMenuAdminShow()">
                     Tambah Data
                 </span>
-                <select name="" id="" class="sortir__button">
-                    <option value="M001">M001</option>
-                    <option value="M002">M002</option>
-                </select>
+                <div class="search__formbox">
+                    <input type="text" id="Input" onkeyup="searchTable()" placeholder="Cari video" class="search__form">
+                    <label for="" class="search__formicon"><i class='bx bx-search'></i></label>
+                </div>
             </div>
             <div class="table__container">
                 <div style="overflow-x: auto;" class="table__width__evaluasi">
@@ -107,26 +107,66 @@
                                 <th>Kode Evaluasi</th>
                                 <th>Nama Evaluasi</th>
                                 <th>Soal Evaluasi</th>
-                                <th>Opsi 1</th>
-                                <th>Opsi 2</th>
-                                <th>Opsi 3</th>
-                                <th>Opsi 4</th>
+                                <th>Opsi</th>
                                 <th>Kunci Jawaban</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="Table">
+                            <!-- isitable -->
                             <tr>
                                 <td>1</td>
                                 <td>M001</td>
                                 <td>E001</td>
                                 <td>Evaluasi Memasak</td>
                                 <td>Apa itu memasak ?</td>
+                                <td>
+                                    <div class="opsi">
+                                        memasak adalah a
+                                    </div>
+                                    <div class="opsi">
+                                        memasak adalah b
+                                    </div>
+                                    <div class="opsi">
+                                        memasak adalah c
+                                    </div>
+                                    <div class="opsi">
+                                        memasak adalah d
+                                    </div>
+                                </td>
                                 <td>Memasak adalah a</td>
-                                <td>Memasak adalah b</td>
-                                <td>Memasak adalah c</td>
-                                <td>Memasak adalah d</td>
-                                <td>Memasak adalah c</td>
+                                <td style="min-width: 140px ;">
+                                    <span class="table__edit" onclick="toggleMenuAdminEditShow()">
+                                        <i class='bx bx-edit-alt'></i>
+                                    </span>
+                                    <a href="" class="table__delete">
+                                        <i class='bx bx-trash-alt'></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>M002</td>
+                                <td>E002</td>
+                                <td>Melayani Pelanggan</td>
+                                <td>Apa itu pelanggan ?</td>
+                                <td>
+                                    <table class="content__tableinside">
+                                        <tr>
+                                            <td>Melayani pelanggan adalah a</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Melayani pelanggan adalah b</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Melayani pelanggan adalah c</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Melayani pelanggan adalah d</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>Mealayani pelanggan adalah b</td>
                                 <td style="min-width: 140px ;">
                                     <span class="table__edit" onclick="toggleMenuAdminEditShow()">
                                         <i class='bx bx-edit-alt'></i>

@@ -89,14 +89,12 @@
             <h2 class="section__title">Report User</h2>
             <p class="section__subtitle">berikut adalah report user</p>
             <div class="insert__button__width">
-                <!-- <span class="insert__button" onclick="toggleMenuAdminShow()">
-                    Tambah Data
-                </span> -->
-                <select name="" id="" class="sortir__button">
-                    <option value="M001">M001</option>
-                    <option value="M002">M002</option>
-                </select>
-                <input type="search" class="search__form" placeholder="Cari">
+                <div class="search__formbox">
+                    <input type="text" id="Input" onkeyup="searchTable()" placeholder="Cari report user"
+                        class="search__form">
+                    <label for="" class="search__formicon"><i class='bx bx-search'></i></label>
+                </div>
+
             </div>
             <div style="overflow-x: auto;">
                 <table class="content__table">
@@ -111,7 +109,7 @@
                             <th>Aksi User</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="Table">
                         <tr>
                             <td>1</td>
                             <td>E001</td>
@@ -119,8 +117,8 @@
                             <td>Apa itu Memasak ?</td>
                             <td>Ahmad M</td>
                             <td>90</td>
-                            <td>
-                                <span class="table__edit" onclick="toggleMenuAdminEditShow()">
+                            <td style="min-width: 140px ;">
+                                <span class=" table__edit" onclick="toggleMenuAdminEditShow()">
                                     <i class='bx bx-edit-alt'></i>
                                 </span>
                                 <a href="" class="table__delete">
@@ -130,12 +128,12 @@
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>E001</td>
-                            <td>Memasak</td>
-                            <td>Apa itu Memasak ?</td>
+                            <td>E002</td>
+                            <td>Melayani Pelanggan</td>
+                            <td>Apa itu melayani pelanggan ?</td>
                             <td>Ahmad M</td>
                             <td>90</td>
-                            <td>
+                            <td style="min-width: 140px ;">
                                 <span class="table__edit" onclick="toggleMenuAdminEditShow()">
                                     <i class='bx bx-edit-alt'></i>
                                 </span>

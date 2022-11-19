@@ -92,6 +92,11 @@
                 <span class="insert__button" onclick="toggleMenuAdminShow()">
                     Tambah Data
                 </span>
+                <div class="search__formbox">
+                    <input type="text" id="Input" onkeyup="searchTable()" placeholder="Cari materi"
+                        class="search__form">
+                    <label for="" class="search__formicon"><i class='bx bx-search'></i></label>
+                </div>
             </div>
             <div style="overflow-x: auto;">
                 <table class="content__table">
@@ -105,7 +110,7 @@
                             <th>Aksi</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="Table">
                         <tr>
                             <td>1</td>
                             <td>M001</td>
@@ -113,7 +118,7 @@
                             <td class="table__rowimage"><img src="../assets/img/book-1.png" alt="" class="table__image">
                             </td>
                             <td><a href="" class="table__file">memasak.pdf</a></td>
-                            <td>
+                            <td style="min-width: 140px ;">
                                 <span class="table__edit" onclick="toggleMenuAdminEditShow()">
                                     <i class='bx bx-edit-alt'></i>
                                 </span>
@@ -124,12 +129,12 @@
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td>M001</td>
-                            <td>Memasak</td>
+                            <td>M002</td>
+                            <td>Melayani Pelanggan</td>
                             <td class="table__rowimage"><img src="../assets/img/book-2.png" alt="" class="table__image">
                             </td>
-                            <td><a href="" class="table__file">memasak.pdf</a></td>
-                            <td>
+                            <td><a href="" class="table__file">melayani pelanggan.pdf</a></td>
+                            <td style="min-width: 140px ;">
                                 <span class="table__edit" onclick="toggleMenuAdminEditShow()">
                                     <i class='bx bx-edit-alt'></i>
                                 </span>
