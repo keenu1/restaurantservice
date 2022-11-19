@@ -67,7 +67,7 @@ signIn.addEventListener('click', () => {
 })
 /*=============== CHANGE FORM INPUT FILE ===============*/
 
-function fileValidation() {
+function fileValidationFile() {
     var fileInput = document.getElementById('file')
     var filePath = fileInput.value;
 
@@ -95,7 +95,26 @@ function fileValidation() {
         /(\.mp4|\.avi|\.mkv|\.3gp)$/i;
 
     if (!allowedExtensions.exec(filePath)) {
-        alert('Invalid file type');
+        alert('Invalid Video type');
+        fileInput.value = '';
+        return false;
+    }
+    fileInput.classList.remove("active")
+    fileInput.classList.toggle("active")
+}
+
+/*=============== CHANGE FORM INPUT FILE Image===============*/
+
+function fileValidationImage() {
+    var fileInput = document.getElementById('file-image')
+    var filePath = fileInput.value;
+
+    // Allowing file type
+    var allowedExtensions =
+        /(\.png|\.jpg|\.jpeg|\.svg)$/i;
+
+    if (!allowedExtensions.exec(filePath)) {
+        alert('Invalid Image type');
         fileInput.value = '';
         return false;
     }

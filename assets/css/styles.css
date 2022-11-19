@@ -348,6 +348,7 @@ img {
 
 .login {
   justify-items: center;
+  height: 650px;
 }
 
 .login__forms {
@@ -385,7 +386,8 @@ img {
 
 
 .login__create {
-  margin-top: -2rem;
+  margin-top: -4rem;
+
 }
 
 .login__tittle {
@@ -1230,6 +1232,15 @@ select.decorated option:hover {}
   color: var(--first-color);
 }
 
+/*=============== REPORT USER ===============*/
+.user__gantiavatar .input__form {
+  background-color: var(--body-color);
+}
+
+.user__gantiavatar .image__profile {
+
+  width: 100px;
+}
 
 
 /* Change background header */
