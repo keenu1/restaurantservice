@@ -1193,6 +1193,45 @@ select.decorated option:hover {}
   margin-bottom: 10px;
 }
 
+/*=============== GANTI PASSWORD ===============*/
+
+.password .input__form {
+  background-color: var(--body-color);
+  max-width: 300px;
+}
+
+/*=============== REPORT USER ===============*/
+.report__user .card__description {
+  position: relative;
+
+}
+
+.report__user .card__score {
+
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.report__user .card__scorelabel {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.9;
+  font-size: var(--normal-font-size);
+}
+
+.report__user .card__listevaluasidanger .card__scorelabel {
+  color: #DC4C64;
+}
+
+.report__user .card__listevaluasisuccess .card__scorelabel {
+  color: var(--first-color);
+}
+
+
+
 /* Change background header */
 .scroll-header {
   box-shadow: 0 1px 12px hsla(var(--hue), var(--sat), 15%, 0.15);
