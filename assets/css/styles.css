@@ -1004,7 +1004,7 @@ select.decorated option:hover {}
 .swiper3 {
   margin-top: 30px;
   width: 100%;
-  height: 300px;
+  height: 100px;
   overflow: hidden;
   align-items: center;
 }
@@ -1063,7 +1063,6 @@ select.decorated option:hover {}
   width: 200px;
   scale: 1;
 }
-
 .card__description h3 {
   padding: 10px 0px;
 }
@@ -1112,6 +1111,11 @@ select.decorated option:hover {}
   margin-top: 30px;
   width: 95%;
 }
+
+.Evaluasi {
+    flex-direction: row;
+    height: 150px;
+  }
 
 .user__evaluasi .card__listevaluasi {
   height: 90%;
@@ -1221,7 +1225,6 @@ select.decorated option:hover {}
 /*=============== REPORT USER ===============*/
 .report__user .card__description {
   position: relative;
-
 }
 
 .report__user .card__score {
@@ -1274,10 +1277,14 @@ select.decorated option:hover {}
 } */
 
 
+@media screen and (max-width: 576px) {
 
+ .video__content .swiper-slide .video__item {
+    display: flex; flex-direction: column;
+    padding: 10px;
+  }
 
-
-
+}
 
 /* For medium devices */
 @media screen and (min-width: 576px) {
@@ -1376,6 +1383,8 @@ select.decorated option:hover {}
   .form__task {
     max-width: 400px;
   }
+
+ 
 
 }
 
@@ -1526,7 +1535,7 @@ select.decorated option:hover {}
     height: 90%;
   }
 
-  .video__content .swiper-slide p {
+  .video__content .swiper-slide p {     
     top: 50%;
 
   }
@@ -1719,9 +1728,13 @@ select.decorated option:hover {}
 
   .card__listimg {
     padding: 20px;
-    display: flex;
     height: fit-content;
     width: 100%;
+    display: flex;
+  }
+
+  .card__listimg img {
+    max-width: 120px;
   }
 
   .form__task {

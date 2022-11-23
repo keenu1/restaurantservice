@@ -11,7 +11,14 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Restaurant Service</title>
+    <!--=============== firebase js ===============-->
+    <script src="auth.js" type="module"></script>
+
+    <!-- sweet alert -->
+    <script src="sweetAlert.js"></script>
+    <link rel="stylesheet" href="sweetAlert.css">
+
+    <title>Restaurant Service | LOGIN</title>
 </head>
 
 <body>
@@ -28,17 +35,17 @@
 
                         <div class="login__box">
                             <i class='bx bx-user login__icon'></i>
-                            <input type="text" placeholder="Username" class="login__input">
+                            <input type="text" placeholder="Username" id="fname" class="login__input">
                         </div>
 
                         <div class="login__box">
                             <i class='bx bx-lock-alt login__icon'></i>
-                            <input type="password" placeholder="Password" class="login__input">
+                            <input type="password" placeholder="Password" id="fpassword" class="login__input">
                         </div>
 
                         <a href="#" class="login__forgot">Lupa Password?</a>
 
-                        <a href="index.html" class="login__button">Masuk</a>
+                        <a href="#" onclick="loginSubmit();" class="login__button">Masuk</a>
 
                         <div>
                             <span class="login__account">Belum Punya Akun ?</span>
@@ -86,13 +93,13 @@
                 </div>
             </div>
         </div>
-
-
     </main>
 
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+
 </body>
 
 </html>
